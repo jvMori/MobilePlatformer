@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobilePlatformer2D", "MobilePlatformer2D.csproj", "{464F66B8-257D-896E-6429-058F5B15CF25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobilePlatformer2D.Editor", "MobilePlatformer2D.Editor.csproj", "{43EA04BB-874C-4A00-0BF3-23FAEE6547BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{464F66B8-257D-896E-6429-058F5B15CF25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{464F66B8-257D-896E-6429-058F5B15CF25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{464F66B8-257D-896E-6429-058F5B15CF25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{464F66B8-257D-896E-6429-058F5B15CF25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43EA04BB-874C-4A00-0BF3-23FAEE6547BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43EA04BB-874C-4A00-0BF3-23FAEE6547BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43EA04BB-874C-4A00-0BF3-23FAEE6547BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43EA04BB-874C-4A00-0BF3-23FAEE6547BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
