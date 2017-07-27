@@ -81,9 +81,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BulletCtrl.cs" />
+    <Compile Include="Assets\CameraCtrl.cs" />
+    <Compile Include="Assets\CoinCtrl.cs" />
+    <Compile Include="Assets\MobileUICtrl.cs" />
     <Compile Include="Assets\PlayerCtrl.cs" />
+    <Compile Include="Assets\Scripts\Helpers\DestroyWithDelay.cs" />
     <Compile Include="Assets\Scripts\MANAGERS\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\MenuCtrl.cs" />
+    <Compile Include="Assets\Scripts\SFX.cs" />
+    <Compile Include="Assets\Scripts\Samples\SamplePlatform.cs" />
+    <Compile Include="Assets\SfxController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Audio\Audio Credits.txt" />
