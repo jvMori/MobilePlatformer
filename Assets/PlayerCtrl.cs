@@ -23,6 +23,7 @@ public class PlayerCtrl : MonoBehaviour {
     public Transform leftBulletSpawnPos, rightBulletSpawnPos;
     public GameObject leftBullet, rightBullet;
     public bool sfxOn;
+    public bool canFire;
 
     private Rigidbody2D rbd;
     private SpriteRenderer sr;
@@ -140,14 +141,17 @@ public class PlayerCtrl : MonoBehaviour {
     }
 
 
-
     void FireBullet()
     {
-        if (sr.flipX)
-            Instantiate(leftBullet, leftBulletSpawnPos.position, Quaternion.identity);
-        else
-            Instantiate(rightBullet, rightBulletSpawnPos.position, Quaternion.identity);
+        if (canFire)
+        {
+            if (sr.flipX)
+                Instantiate(leftBullet, leftBulletSpawnPos.position, Quaternion.identity);
+            else
+                Instantiate(rightBullet, rightBulletSpawnPos.position, Quaternion.identity);
+        }
     }
+
     void EnableDoubleJump()
     {
         canDoubleJump = true;
@@ -171,8 +175,23 @@ public class PlayerCtrl : MonoBehaviour {
         {
             case "Coin":
                 if (sfxOn)
-                    SfxController.instance.ShowSparkle(collision.gameObject.transform.position);
+                    SfxController.instance.ShowCoinSparkle(collision.gameObject.transform.position);
                 break;
+
+            case "Water":
+                SfxController.instance.ShowSplashEffect(collision.gameObject.transform.position);
+                GameCtrl.instance.PlayerDrowned(collision.gameObject);
+                break;
+
+            case "Powerup_Bullet":
+                canFire = true;
+                Vector3 powerUpPos = collision.gameObject.transform.position;
+                Destroy(collision.gameObject);
+
+                if (sfxOn)
+                    SfxController.instance.ShowBulletSparkle(powerUpPos);
+                break;
+
             default:
                 break;
         }
