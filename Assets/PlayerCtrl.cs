@@ -28,7 +28,7 @@ public class PlayerCtrl : MonoBehaviour {
     private Rigidbody2D rbd;
     private SpriteRenderer sr;
     private Animator anim;
-    private bool isJumping, leftPressed, rightPressed;
+    public bool isJumping, leftPressed, rightPressed;
 
        
 	void Start () {
@@ -165,8 +165,7 @@ public class PlayerCtrl : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("GROUND"))
-            isJumping = false;
+          
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

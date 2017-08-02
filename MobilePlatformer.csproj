@@ -90,6 +90,7 @@
     <Compile Include="Assets\GarbageCtrl.cs" />
     <Compile Include="Assets\HeadCtrl.cs" />
     <Compile Include="Assets\MobileUICtrl.cs" />
+    <Compile Include="Assets\MovingPlatform.cs" />
     <Compile Include="Assets\PlayerCtrl.cs" />
     <Compile Include="Assets\Scripts\Helpers\DestroyWithDelay.cs" />
     <Compile Include="Assets\Scripts\MANAGERS\PlayerManager.cs" />
